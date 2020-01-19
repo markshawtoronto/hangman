@@ -3,6 +3,6 @@ defmodule HangmanTest do
   doctest Hangman
 
   test "greets the world" do
-    assert Hangman.hello() == :world
+    assert Hangman.new_game == %{turns_left: 7, game_state: :initializing}
   end
 end
